@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <div class="container card">
+      <h1>Admin Panel</h1>
+      <div id="stats" class="muted small"></div>
+      <div style="margin-top:12px"><a href="/" class="btn ghost">Back to Shop</a></div>
+    </div>
+    <script>
+      const token = localStorage.getItem('token');
+      if (!token) {
+        document.body.innerHTML = '<p>Please login as admin first. <a href="/">Back</a></p>';
+      } else {
+        fetch('/api/admin/stats', { headers: { Authorization: 'Bearer '+token } }).then(r=>r.json()).then(j=>{
+          if (j.error) document.getElementById('stats').innerText = j.error;
+          else document.getElementById('stats').innerHTML = `Users: ${j.users}<br/>Products: ${j.products}<br/>Orders: ${j.orders}`;
+        });
+      }
+    </script>
+  </body>
+</html>
