@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rayidi Kavya Chowdary — Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+  <div id="progress-bar" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">RK</a>
+      <nav class="nav">
+        <button id="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-sun"></i></button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content" data-aos="fade-up">
+          <h1 class="name">Rayidi Kavya Chowdary</h1>
+          <p class="title">IT Developer | Full Stack Developer | ML Enthusiast</p>
+          <p class="tagline">Crafting intelligent and scalable digital experiences through modern web technologies and machine learning solutions.</p>
+          <div class="hero-ctas">
+            <a class="btn ghost" href="#projects">View Projects</a>
+          </div>
+        </div>
+        <div class="hero-visuals" data-aos="zoom-in">
+          <div id="particles-js" class="particles-canvas"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <div class="about-grid">
+          <div class="glass-card" data-aos="fade-right">
+            <p>I am a results-driven IT developer specializing in building responsive, accessible, and performant web applications. I bring practical Full Stack experience from ApexPlanet and hands-on Machine Learning work at SkillCraft Technology. I enjoy turning product requirements into polished interfaces and reliable backend services, and I apply ML techniques to deliver smarter user experiences.</p>
+            <h4>Core competencies</h4>
+            <ul class="tech-list">
+              <li>Frontend: HTML, CSS, JavaScript, React — UI architecture and component-driven design</li>
+              <li>Backend: Node.js, Express.js, Python — API design, authentication, and microservices</li>
+              <li>Databases: MySQL, MongoDB — schema design and performance tuning</li>
+              <li>Tools & workflow: Git, GitHub, VS Code, CI/CD, testing</li>
+            </ul>
+          </div>
+          <div class="glass-card" data-aos="fade-left">
+            <h3>Professional highlights</h3>
+            <ul class="facts">
+              <li>Designed and shipped responsive dashboards and customer-facing web apps at ApexPlanet.</li>
+              <li>Built ML pipelines and prototype models at SkillCraft Technology to improve feature recommendations.</li>
+              <li>Advocate for performance, maintainability, and user-centered design.</li>
+            </ul>
+            <p style="margin-top:.75rem">Available for contract and full-time roles. Résumé and project portfolio available below.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card glass-card" data-target="90">
+            <h4>React</h4>
+            <div class="counter">0</div>
+          </div>
+          <div class="skill-card glass-card" data-target="85">
+            <h4>JavaScript</h4>
+            <div class="counter">0</div>
+          </div>
+          <div class="skill-card glass-card" data-target="80">
+            <h4>Node.js</h4>
+            <div class="counter">0</div>
+          </div>
+          <div class="skill-card glass-card" data-target="75">
+            <h4>Python / ML</h4>
+            <div class="counter">0</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item glass-card" data-aos="fade-up">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Full Stack Developer</h3>
+              <p class="company">ApexPlanet</p>
+              <p class="timeline-date">Internship</p>
+              <ul>
+                <li>Developed and maintained responsive web dashboards using React, improving user interface performance and accessibility.</li>
+                <li>Built RESTful APIs with Node.js and Express.js for backend services, handling authentication and data management.</li>
+                <li>Collaborated with design and product teams to translate requirements into scalable, maintainable code.</li>
+                <li>Optimized database queries in MySQL, resulting in improved load times and user experience.</li>
+                <li>Implemented version control workflows with Git and GitHub, ensuring clean commit history and team collaboration.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item glass-card" data-aos="fade-up">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Machine Learning Developer</h3>
+              <p class="company">SkillCraft Technology</p>
+              <p class="timeline-date">Internship</p>
+              <ul>
+                <li>Designed and implemented machine learning pipelines for data preprocessing and feature engineering in Python.</li>
+                <li>Trained and evaluated classification and regression models to solve real-world business problems.</li>
+                <li>Built prototype recommendation systems that improved user engagement and product personalization.</li>
+                <li>Created data visualization dashboards to communicate model insights to stakeholders.</li>
+                <li>Documented ML workflows and best practices, fostering knowledge sharing within the team.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="ml">ML</button>
+        </div>
+        <div id="projects-grid" class="projects-grid">
+          <!-- Project cards inserted by JS -->
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="contact-grid" style="display:grid;grid-template-columns:1fr 320px;gap:1rem;align-items:start">
+          <div class="glass-card" data-aos="fade-up">
+            <p>If you'd like to discuss a project, collaboration, or opportunities, please get in touch. I respond to messages typically within 48 hours.</p>
+            <p><strong>Email:</strong> <a href="mailto:you@example.com">rayidikavyachowdary@gmail.com</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/rayidikavya" target="_blank" rel="noopener">github.com/rayidikavya</a></p>
+            <p><strong>Location:</strong> India (open to remote work)</p>
+          </div>
+          <div class="glass-card" data-aos="fade-left">
+            <h4>Quick contact form</h4>
+            <form id="contact-form" action="mailto:you@example.com" method="post" enctype="text/plain">
+              <label style="display:block;margin-bottom:.25rem">Name</label>
+              <input name="name" required style="width:100%;padding:.5rem;border-radius:6px;border:1px solid rgba(0,0,0,0.06)" />
+              <label style="display:block;margin:.5rem 0 .25rem">Message</label>
+              <textarea name="message" rows="4" required style="width:100%;padding:.5rem;border-radius:6px;border:1px solid rgba(0,0,0,0.06)"></textarea>
+              <div style="margin-top:.75rem"><button class="btn primary" type="submit">Send Message</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© Rayidi Kavya Chowdary</div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
